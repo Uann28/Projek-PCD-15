@@ -46,34 +46,15 @@ Contrast stretching : proses ini meningkatkan kontras citra dengan merentangkan 
 ## Akurasi
 
 * Tanpa augmentasi dan tanpa preprocessing
-Random Forest
 ![image](https://github.com/user-attachments/assets/f55f1f91-5bd7-44b8-8301-06208bb2a640)
-SVM
-![image](https://github.com/user-attachments/assets/4b278bb5-30ae-4d2f-bc10-52f2206ebb8e)
-KNN
-![image](https://github.com/user-attachments/assets/31514aa3-fba0-46f7-bac9-1ce65121f6fe)
 
 * augmentasi dan preprocessing v-channel & ekualisasi histogram
-Random Forest
 ![image](https://github.com/user-attachments/assets/369a85a6-58a8-415c-ba47-bf5da3b4e59c)
-SVM
-![image](https://github.com/user-attachments/assets/3767b744-d5a9-473d-bfe6-125f3c30a1f7)
-KNN
-![image](https://github.com/user-attachments/assets/c071fa4b-1311-4728-b905-e9e04802b700)
 
 * augmentasi dan preprocessing v-channel & ekualisasi histogram & sharpening & gaussian blur
-Random Forest
 ![image](https://github.com/user-attachments/assets/97dde717-0b53-41ed-81be-87a3c2894322)
-SVM
-![image](https://github.com/user-attachments/assets/5d624dfa-46be-424e-9f5e-bcf21e6aa8da)
-KNN
-![image](https://github.com/user-attachments/assets/637fd16f-e3a5-4e1b-bc0e-de10afa5f4c1)
 
 * augmentasi dan preprocessing v-channel & ekualisasi histogram & deteksi tepi sobel & contrast stretching
-Random Forest
 ![image](https://github.com/user-attachments/assets/610c569f-0a29-4dbd-9d04-1826a0c8c5b4)
-SVM
-![image](https://github.com/user-attachments/assets/82ff7f26-019f-4174-81b6-fbb21e105735)
-KNN
-![image](https://github.com/user-attachments/assets/e08501b1-afe1-4590-a2e5-7cfb71606109)
+
 
