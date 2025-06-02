@@ -23,9 +23,57 @@ Di sisi lain, buat pekebun atau pedagang pisang, penting untuk tahu kapan waktu 
 
 Dataset yang digunakan dalam proyek ini bersumber dari Kaggle:
 
-* *Nama Dataset:* Dogs Skin Disease Dataset
+* *Nama Dataset:* Banana Classification
 * *Tautan:* [https://www.kaggle.com/datasets/atrithakar/banana-classification]
 * *Deskripsi:* Dataset ini berisi kumpulan gambar pisang yang telah dikategorikan berdasarkan tingkat kematangan. 
 * *Jumlah Gambar:* Sekitar 562+- gambar.
 * *Jumlah Gambar Total Setelah Filter:* Sekitar 330 gambar.
+
+## PreProcessing
+
+V-channel HSV : proses ini berguna untuk mengonversi citra RGB menjadi channel V (Value) dari model HSV, yang mana mewakili kecerahan maksimum tiap piksel. Channel V digunakan untuk menekankan intensitas cahaya pisang sehingga memudahkan pemrosesan lanjutan.
+
+Ekualisasi Histogram : proses ini berguna melakukan distribusi kecerahan pada channel V dengan metode histogram equalization. Tujuannya untuk meningkatkan kontras citra pisang sehingga ciri khas warna dari pisang lebih terlihat jelas.
+
+konvolusi kernel sharpening : proses ini menerapkan operasi konvolusi pada citra dengan kernel sharpening (penajaman).. Proses ini membantu dalam menajamkan citra pisang agar dapat terlihat lebih jelas.
+
+Gaussian blur : proses ini mengaburkan atau memblurkan citra menggunakan kernel Gaussian untuk mengurangi noise dan detail kecil. proses ini membuat fitur utama pisang (warna dan bentuk besar) lebih mudah dideteksi dalam klasifikasi.
+
+Deteksi tepi Sobel : proses ini mendeteksi tepi pada citra dengan operator Sobel untuk menonjolkan batas antara area pixel yang berbeda. Deteksi tepi ini penting karena untuk memahami bentuk atau corak dari busuk pisang saat klasifikasi.
+
+Contrast stretching : proses ini meningkatkan kontras citra dengan merentangkan nilai intensitas piksel dari minimum hingga maksimum (0-255). Proses ini mempermudah pengenalan warna dan tekstur pisang yang khas untuk setiap kelas.
+
+## Akurasi
+
+* Tanpa augmentasi dan tanpa preprocessing
+Random Forest
+![image](https://github.com/user-attachments/assets/f55f1f91-5bd7-44b8-8301-06208bb2a640)
+SVM
+![image](https://github.com/user-attachments/assets/4b278bb5-30ae-4d2f-bc10-52f2206ebb8e)
+KNN
+![image](https://github.com/user-attachments/assets/31514aa3-fba0-46f7-bac9-1ce65121f6fe)
+
+* augmentasi dan preprocessing v-channel & ekualisasi histogram
+Random Forest
+![image](https://github.com/user-attachments/assets/369a85a6-58a8-415c-ba47-bf5da3b4e59c)
+SVM
+![image](https://github.com/user-attachments/assets/3767b744-d5a9-473d-bfe6-125f3c30a1f7)
+KNN
+![image](https://github.com/user-attachments/assets/c071fa4b-1311-4728-b905-e9e04802b700)
+
+* augmentasi dan preprocessing v-channel & ekualisasi histogram & sharpening & gaussian blur
+Random Forest
+![image](https://github.com/user-attachments/assets/97dde717-0b53-41ed-81be-87a3c2894322)
+SVM
+![image](https://github.com/user-attachments/assets/5d624dfa-46be-424e-9f5e-bcf21e6aa8da)
+KNN
+![image](https://github.com/user-attachments/assets/637fd16f-e3a5-4e1b-bc0e-de10afa5f4c1)
+
+* augmentasi dan preprocessing v-channel & ekualisasi histogram & deteksi tepi sobel & contrast stretching
+Random Forest
+![image](https://github.com/user-attachments/assets/610c569f-0a29-4dbd-9d04-1826a0c8c5b4)
+SVM
+![image](https://github.com/user-attachments/assets/82ff7f26-019f-4174-81b6-fbb21e105735)
+KNN
+![image](https://github.com/user-attachments/assets/e08501b1-afe1-4590-a2e5-7cfb71606109)
 
