@@ -10,12 +10,6 @@ Proyek ini dikembangkan oleh tim yang terdiri dari:
 3. F1D02310106	ARYA RAYAN UTAMA
 4. F1D02310135	RENGGANIS CAHYA ANDINI
 
-## Daftar Isi
-
-1.  [Tim Pengembang](#-tim-pengembang)
-2.  [Pendahuluan](#-pendahuluan)
-3.  [Dataset](#-dataset)
-
 ## Pendahuluan
 
 Pisang itu salah satu buah paling sering dikonsumsi di Indonesia mulai dari anak-anak sampai orang tua suka makan pisang. Tapi masalahnya, pisang itu gampang banget berubah kualitas. misalnya hari ini masih hijau, dua hari lagi langsung matang, eh besoknya udah busuk. Nah, buat pengkonsumsi pisang, ini bikin bingung. Kadang mereka beli pisang, tapi belum tahu apakah udah matang sempurna, atau justru udah kelewat waktu makan. Padahal rasa, tekstur, dan bahkan nilai gizinya beda-beda tergantung tingkat kematangan.
