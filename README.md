@@ -1,6 +1,6 @@
 # Klasifikasi Kematangan Buah Pisang: Mentah, Matang, dan Terlalu Matang/Busuk
 
-Proyek ini adalah *tugas besar untuk praktikum Pengolahan Citra Digital 2025. Project ini memiliki tujuan untuk membantu pekebun atau pengkonsumsi pisang agar dapat lebih cepat dan mudah dalam mengidentifikasi tingkat kematangan pisang, sehingga aktivitasnya menjadi lebih efisien.
+Proyek ini adalah tugas besar untuk praktikum mata kuliah Pengolahan Citra Digital 2025. Project ini memiliki tujuan untuk membantu pekebun atau pengkonsumsi pisang agar dapat lebih cepat dan mudah dalam mengidentifikasi tingkat kematangan pisang, sehingga aktivitasnya menjadi lebih efisien.
 
 ## Tim Pengembang
 
